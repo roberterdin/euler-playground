@@ -1,3 +1,5 @@
+package eu.erdin.euler
+
 /**
   * Created by robert on 08/10/16.
   */

@@ -1,7 +1,10 @@
+package eu.erdin.euler
+
 /**
   * Created by robert on 07/10/16.
   */
 abstract class EulerSolution {
+
   def answer(): Any
 
   def main(args: Array[String]) {
