@@ -18,9 +18,9 @@ object Main {
     readmeFile.clear()
     scala.io.Source.fromInputStream(rawReadme.newInputStream).mkString >>: readmeFile
 
-    "## Answers\n" >>: readmeFile
-    "| Problem   | Answer   | Cold JVM   | Warm JVM   |\n" >>: readmeFile
-    "| ------------- |:-------------:| -----:|-----:|\n" >>:readmeFile
+    "## Answers" >>: readmeFile
+    "| Problem   | Answer   | Cold JVM   | Warm JVM   |" >>: readmeFile
+    "| ------------- |:-------------:| -----:|-----:|" >>:readmeFile
 
 
     println("Problem \t Answer \t Cold JVM")
@@ -31,7 +31,7 @@ object Main {
       val after = System.nanoTime()
       println(s"$i \t\t\t $answer \t ${(after - before) / 1000000}ms")
 
-      s"| $i | $answer | ${(after - before) / 1000000}ms | |\n" >>: readmeFile
+      s"| $i | $answer | ${(after - before) / 1000000}ms | |" >>: readmeFile
     }
 
     "Scala " + scala.util.Properties.versionString + "\n" >>: readmeFile
