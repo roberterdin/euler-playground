@@ -1,4 +1,6 @@
-package eu.erdin.euler
+package eu.erdin.euler.solutions
+
+import eu.erdin.euler.EulerSolution
 
 /**
   * Created by robert on 09/10/16.

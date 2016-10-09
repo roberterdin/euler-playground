@@ -1,4 +1,5 @@
 import eu.erdin.euler._
+import eu.erdin.euler.solutions.Euler_005
 import org.scalameter.api._
 
 /**
