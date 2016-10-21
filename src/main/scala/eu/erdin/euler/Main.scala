@@ -28,7 +28,7 @@ object Main {
 
     "## Answers" >>: readmeFile
     "| Problem   | Answer   | Cold JVM   | Warm JVM   |" >>: readmeFile
-    "| ------------- |:-------------:| -----:|-----:|" >>:readmeFile
+    "| ------------- |:-------------:|:-----:|:-----:|" >>:readmeFile
 
 
     println("Problem \t Answer \t Cold JVM")
@@ -45,7 +45,7 @@ object Main {
     }
 
     "Scala " + scala.util.Properties.versionString >>: readmeFile
-    "; JVM version " + scala.util.Properties.javaVmVersion >>: readmeFile
+    "/ JVM version " + scala.util.Properties.javaVmVersion >>: readmeFile
   }
 
 }

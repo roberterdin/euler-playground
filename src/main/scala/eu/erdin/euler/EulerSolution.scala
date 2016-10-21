@@ -12,8 +12,10 @@ abstract class EulerSolution {
 
   def answer(): Any
 
-  lazy val primeStream: Stream[Long] = 2L #:: Stream.from(3).map(_.toLong).filter(i =>
-    primeStream.takeWhile { j => j * j <= i }.forall { k => i % k > 0 })
+  lazy val primeStream: Stream[Long] = EulerTools.primeStream
+
+  def primeFactors(x: Long): List[Long] = EulerTools.primeFactors(x)
+
 
   def main(args: Array[String]) {
     val before = System.nanoTime()
