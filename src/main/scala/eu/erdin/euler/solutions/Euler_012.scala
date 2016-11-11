@@ -24,6 +24,7 @@ object Euler_012 extends EulerSolution {
 
   override def answer(): Any = {
 
+    // had to steal from here: http://code.jasonbhill.com/sage/project-euler-problem-12/
     def findTriangularIndex(i: Int, lnum: Int, rnum: Int, limit: Int): Int = {
       val llnum = rnum
       val rrnum = noOfFactors(trianNumber(i+1))
