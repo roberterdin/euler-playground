@@ -17,7 +17,7 @@ object Main {
   val solutionDir = File("src/main/scala/eu/erdin/euler/solutions")
 
   val readmeFile = File("README.md")
-  val rawReadme = File("raw_readme.md")
+  val rawReadme = File("readme.tmpl")
 
   def objectInitializer[T](name: String)(implicit man: Manifest[T]): T =
     Class.forName(name + "$").getField("MODULE$").get(man.erasure).asInstanceOf[T]

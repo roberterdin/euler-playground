@@ -10,7 +10,7 @@ object Euler_005 extends EulerSolution {
 
   override def answer(): Any = {
 //    TODO: find more efficient solution. Maybe https://en.wikipedia.org/wiki/Sieve_of_Atkin helps
-    version2()
+    version1()
   }
 
   /**

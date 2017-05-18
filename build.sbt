@@ -2,17 +2,18 @@ name := "Euler_Problems"
 
 version := "1.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.2"
 
+//addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.4")
 
 resolvers += "Sonatype OSS Snapshots" at
   "https://oss.sonatype.org/content/repositories/releases"
 
-libraryDependencies += "com.storm-enroute" %% "scalameter" % "0.7"
-libraryDependencies += "com.github.pathikrit" %% "better-files" % "2.16.0"
+libraryDependencies += "com.github.pathikrit" % "better-files_2.12" % "2.17.1"
+libraryDependencies += "com.storm-enroute" % "scalameter_2.12" % "0.8.2"
 
-testFrameworks += new TestFramework("org.scalameter.ScalaMeterFramework")
 
-logBuffered := false
+mainClass in Compile := Some("eu.erdin.euler.Main")
+
 
 parallelExecution in Test := false
